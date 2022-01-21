@@ -1,0 +1,26 @@
+import math
+n1 = float(input("Enter first number: "))
+print("Operation: +, -, *, /","sqrt","^","1/x")
+select = input("Select operations: ")
+if select == "+":
+    n2 = float(input("Enter second number: "))
+    print(n1, "+", n2, "=", n1+n2)
+elif select == "-":
+    n2 = float(input("Enter second number: "))
+    print(n1, "-", n2, "=", n1-n2)
+elif select == "*":
+    n2 = float(input("Enter second number: "))
+    print(n1, "*", n2, "=", n1*n2)
+elif select == "/":
+    n2 = float(input("Enter second number: "))
+    print(n1, "/", n2, "=", n1/n2)
+elif select=="sqrt":
+    print(math.sqrt(n1))
+elif select=="^":
+    power=float(input())
+    print(n1,"the power",power,"is",n1**power)
+elif select=="1/x":
+    x=int(input())
+    print(n1**(1/x))
+else:
+    print("Invalid input")
